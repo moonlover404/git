@@ -186,9 +186,12 @@ OPTIONS
 `--no-stripspace`::
 	Strip leading and trailing whitespace from the note message.
 	Also strip out empty lines other than a single line between
-	paragraphs. Lines starting with `#` will be stripped out
+	paragraphs. Lines starting with the comment character
+	(default `#`) will be stripped out
 	in non-editor cases like `-m`, `-F` and `-C`, but not in
 	editor case like `git notes edit`, `-c`, etc.
++
+See `core.commentChar` in linkgit:git-config[1].
 
 `--ref <ref>`::
 	Manipulate the notes tree in _<ref>_.  This overrides
